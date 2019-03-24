@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/searchBar renders component 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa cdlyjo"
+  >
+    <input
+      class="sc-bwzfXH fodZgz"
+      placeholder="Search for something... or don't, I don't care."
+    />
+    <button
+      class="sc-htpNat fQXDrD"
+    >
+      Search
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/singleMovie renders single movie without errors 1`] = `
+<div>
+  <article
+    class="sc-bdVaJa kFFJxX"
+  >
+    <header
+      class="sc-bxivhb jUNcIt"
+    >
+      Lasse Kongo Returns
+    </header>
+    <div
+      class="sc-bwzfXH laGMxf"
+    />
+    <div
+      class="sc-htpNat efCFXL"
+    />
+    <h1>
+      Cast and Actors
+    </h1>
+    <ul
+      class="sc-ifAKCX csfqHH"
+    >
+      <li
+        class="cast-member sc-EHOje chKFNo"
+      >
+        <span />
+        <span />
+      </li>
+      <li
+        class="cast-member sc-EHOje chKFNo"
+      >
+        <span />
+        <span />
+      </li>
+      <li
+        class="cast-member sc-EHOje chKFNo"
+      >
+        <span />
+        <span />
+      </li>
+      <li
+        class="cast-member sc-EHOje chKFNo"
+      >
+        <span />
+        <span />
+      </li>
+    </ul>
+  </article>
+</div>
+`;

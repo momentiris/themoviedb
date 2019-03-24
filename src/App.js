@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import ContextProvider from './components/contextProvider'
+import Loader from './components/loader'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+const Start = React.lazy(() => import('./views/start'))
+const Movie = React.lazy(() => import('./views/movie'))
+
+const App = () => {
+  return (
+    <React.Suspense fallback={<Loader />}>
+      <ContextProvider>
+        <Router>
+          <Route exact path="/" component={Start} />
+          <Route exact path="/movie/:id" component={Movie} />
+        </Router>
+      </ContextProvider>
+    </React.Suspense>
+  )
 }
 
-export default App;
+export default App

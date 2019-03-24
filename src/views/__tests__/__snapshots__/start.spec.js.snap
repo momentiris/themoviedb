@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`views/start renders component 1`] = `
+<div>
+  <div
+    class="sc-EHOje bsGAgl"
+  >
+    <header
+      class="sc-htoDjs gxcVEN"
+    >
+      Find a companion to your lonely evening.
+    </header>
+    <div
+      class="sc-bdVaJa cdlyjo"
+    >
+      <input
+        class="sc-bwzfXH fodZgz"
+        placeholder="Search for something... or don't, I don't care."
+      />
+      <button
+        class="sc-htpNat fQXDrD"
+      >
+        Search
+      </button>
+    </div>
+    
+    <ul
+      class="sc-ifAKCX hBLwFX"
+    />
+  </div>
+</div>
+`;
+
+exports[`views/start rerenders with movies given updated query 1`] = `
+<div>
+  <div
+    class="sc-EHOje bsGAgl"
+  >
+    <header
+      class="sc-htoDjs gxcVEN"
+    >
+      Find a companion to your lonely evening.
+    </header>
+    <div
+      class="sc-bdVaJa cdlyjo"
+    >
+      <input
+        class="sc-bwzfXH fodZgz"
+        placeholder="Search for something... or don't, I don't care."
+      />
+      <button
+        class="sc-htpNat fQXDrD"
+      >
+        Search
+      </button>
+    </div>
+    
+    <ul
+      class="sc-ifAKCX hBLwFX"
+    />
+  </div>
+</div>
+`;
+
+exports[`views/start rerenders with movies given updated query 2`] = `
+<div>
+  <div
+    class="sc-EHOje bsGAgl"
+  >
+    <header
+      class="sc-htoDjs gxcVEN"
+    >
+      Find a companion to your lonely evening.
+    </header>
+    <div
+      class="sc-bdVaJa cdlyjo"
+    >
+      <input
+        class="sc-bwzfXH fodZgz"
+        placeholder="Search for something... or don't, I don't care."
+      />
+      <button
+        class="sc-htpNat fQXDrD"
+      >
+        Search
+      </button>
+    </div>
+    <ul
+      class="sc-ifAKCX hBLwFX"
+    >
+      <a
+        href="/movie/undefined"
+        style="text-decoration: none;"
+      >
+        <li
+          class="sc-bxivhb ihSIrs"
+          title="Lasse Kongo Returns"
+        >
+          <span>
+            Lasse Kongo Returns
+          </span>
+        </li>
+      </a>
+      <a
+        href="/movie/undefined"
+        style="text-decoration: none;"
+      >
+        <li
+          class="sc-bxivhb ihSIrs"
+          title="Lasse Kongo Returns"
+        >
+          <span>
+            Lasse Kongo Returns
+          </span>
+        </li>
+      </a>
+    </ul>
+  </div>
+</div>
+`;
