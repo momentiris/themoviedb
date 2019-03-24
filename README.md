@@ -2,6 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Skills assesment test Front End - Andreas Lundqvist
 
+## Prerequisites
+You will need to to set the environment variable REACT_APP_API_KEY with your API key to tmdb.
+
 ## Available Scripts
 
 In the project directory, you can run:
