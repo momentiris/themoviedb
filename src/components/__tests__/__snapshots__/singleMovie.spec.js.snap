@@ -14,36 +14,46 @@ exports[`components/singleMovie renders single movie without errors 1`] = `
       class="sc-bwzfXH laGMxf"
     />
     <div
-      class="sc-htpNat efCFXL"
-    />
+      class="sc-htpNat gqQVoN"
+    >
+      <p />
+    </div>
     <h1>
       Cast and Actors
     </h1>
     <ul
-      class="sc-ifAKCX csfqHH"
+      class="sc-ifAKCX kKzCkS"
     >
       <li
-        class="cast-member sc-EHOje chKFNo"
+        class="cast-member sc-EHOje lkzxgk"
       >
-        <span />
+        <span>
+           as 
+        </span>
         <span />
       </li>
       <li
-        class="cast-member sc-EHOje chKFNo"
+        class="cast-member sc-EHOje lkzxgk"
       >
-        <span />
+        <span>
+           as 
+        </span>
         <span />
       </li>
       <li
-        class="cast-member sc-EHOje chKFNo"
+        class="cast-member sc-EHOje lkzxgk"
       >
-        <span />
+        <span>
+           as 
+        </span>
         <span />
       </li>
       <li
-        class="cast-member sc-EHOje chKFNo"
+        class="cast-member sc-EHOje lkzxgk"
       >
-        <span />
+        <span>
+           as 
+        </span>
         <span />
       </li>
     </ul>

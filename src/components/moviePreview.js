@@ -3,29 +3,29 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const Container = styled.li`
-  width: 100%;
+  max-width: 250px;
   height: 250px;
-  background: ${({ bg }) =>
-    !bg ? 'black;' : 'center / cover no-repeat url(' + bg + ');'} 
+  border-radius: 5px;
+  padding: 1rem;
+  background: top/contain no-repeat url('${({ bg }) => bg}');
   transition: all 200ms ease;
   position: relative;
   display: flex;
+  box-shadow: 2px 2px 7px grey;
+  justify-content: flex-end;
+  flex-flow: column nowrap;
+  text-decoration:none;
+  &:hover {
+    transform: scale(1.02);
+  }
   :hover span {
     opacity: 1;
   }
-
-  span {
-    padding: 1rem;
-    width: 100%;
-    text-decoration: none;
-    transition: all 200ms ease;
-    font-size: 28px;
-    color: black;
-    opacity: 0;
+  span:first-child {
     font-weight: bold;
-    background: white;
+    margin-bottom: .5rem;
   }
-
+ 
 `
 
 const Grid = styled.ul`
@@ -40,16 +40,23 @@ const Grid = styled.ul`
 
 export default ({ movies }) => (
   <Grid>
-    {movies.map((movie, i) => (
-      <Link
-        style={{ textDecoration: 'none' }}
-        key={i}
-        to={`/movie/${movie.id}`}
-      >
-        <Container title={movie.title} bg={movie.backdrop_path}>
-          <span>{movie.title}</span>
-        </Container>
-      </Link>
-    ))}
+    {movies.map((movie, i) => {
+      console.log('====================================')
+      console.log(movie)
+      console.log('====================================')
+      return (
+        <Link
+          style={{ textDecoration: 'none', color: 'black' }}
+          key={i}
+          to={`/movie/${movie.id}`}
+        >
+          <Container title={movie.title} bg={movie.backdrop_path}>
+            <span>{movie.title}</span>
+            <span>Released: {movie.release_date}</span>
+            <span>Score: {movie.vote_average}</span>
+          </Container>
+        </Link>
+      )
+    })}
   </Grid>
 )

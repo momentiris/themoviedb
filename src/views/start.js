@@ -33,7 +33,7 @@ export default () => {
     getDataAsync(query, types.SEARCH_RESULT_MOVIES)
       .then(data => {
         const withImagesAndSorted = data.results
-          .map(m => withImageUrls(m, 185))
+          .map(m => withImageUrls(m, 300))
           .sort((a, b) => (a.popularity > b.popularity ? -1 : 1))
 
         dispatch({

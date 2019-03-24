@@ -15,8 +15,8 @@ const Hero = styled.div`
 `
 const Details = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: center;
+
+  font-size: 18px;
 `
 
 const Header = styled.header`
@@ -32,6 +32,7 @@ const CastContainer = styled.ul`
   margin: 0;
   padding: 2rem;
   list-style: none;
+
   grid-gap: 3vmin;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 `
@@ -39,12 +40,12 @@ const Cast = styled.li`
   width: 100%;
   height: 200px;
   position: relative;
-  background: black;
+
   font-size: 24px;
   font-weight: bold;
-    color: #f1f1f1;
+    color: #black;
   span:nth-child(1) {
-  background: black;
+
     width: 100%;
     height: 200px;
     opacity: 1;
@@ -55,29 +56,34 @@ const Cast = styled.li`
     transition: all 200ms ease;
     position: absolute;
     content:"${({ name }) => name}";
-  background: black;
+
 
     opacity: 0;
     width: 100%;
     height: 200px;
   }
 
-  :hover::after {
-    opacity: 1
-  }
+ 
 
 `
 export default ({ movie: { details, credits } }) => {
+  console.log('====================================')
+  console.log(details)
+  console.log('====================================')
   return (
     <Container>
       <Header>{details.title}</Header>
       <Hero bg={details.backdrop_path} />
-      <Details />
+      <Details>
+        <p>{details.overview}</p>
+      </Details>
       <h1>Cast and Actors</h1>
       <CastContainer>
         {credits.cast.map((c, i) => (
           <Cast name={c.name} className="cast-member" key={i}>
-            <span>{c.character}</span>
+            <span>
+              {c.name} as {c.character}
+            </span>
             <span />
           </Cast>
         ))}

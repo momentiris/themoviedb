@@ -90,27 +90,39 @@ exports[`views/start rerenders with movies given updated query 2`] = `
     >
       <a
         href="/movie/undefined"
-        style="text-decoration: none;"
+        style="text-decoration: none; color: black;"
       >
         <li
-          class="sc-bxivhb ihSIrs"
+          class="sc-bxivhb jekTJH"
           title="Lasse Kongo Returns"
         >
           <span>
             Lasse Kongo Returns
           </span>
+          <span>
+            Released: 
+          </span>
+          <span>
+            Score: 
+          </span>
         </li>
       </a>
       <a
         href="/movie/undefined"
-        style="text-decoration: none;"
+        style="text-decoration: none; color: black;"
       >
         <li
-          class="sc-bxivhb ihSIrs"
+          class="sc-bxivhb jekTJH"
           title="Lasse Kongo Returns"
         >
           <span>
             Lasse Kongo Returns
+          </span>
+          <span>
+            Released: 
+          </span>
+          <span>
+            Score: 
           </span>
         </li>
       </a>
