@@ -7,7 +7,7 @@ exports[`components/searchBar renders component 1`] = `
   >
     <input
       class="sc-bwzfXH fodZgz"
-      placeholder="Search for something... or don't, I don't care."
+      placeholder="Search for a movie..."
     />
     <button
       class="sc-htpNat fQXDrD"

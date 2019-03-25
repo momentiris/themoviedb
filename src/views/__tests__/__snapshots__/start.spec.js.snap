@@ -15,7 +15,7 @@ exports[`views/start renders component 1`] = `
     >
       <input
         class="sc-bwzfXH fodZgz"
-        placeholder="Search for something... or don't, I don't care."
+        placeholder="Search for a movie..."
       />
       <button
         class="sc-htpNat fQXDrD"
@@ -46,7 +46,7 @@ exports[`views/start rerenders with movies given updated query 1`] = `
     >
       <input
         class="sc-bwzfXH fodZgz"
-        placeholder="Search for something... or don't, I don't care."
+        placeholder="Search for a movie..."
       />
       <button
         class="sc-htpNat fQXDrD"
@@ -77,7 +77,7 @@ exports[`views/start rerenders with movies given updated query 2`] = `
     >
       <input
         class="sc-bwzfXH fodZgz"
-        placeholder="Search for something... or don't, I don't care."
+        placeholder="Search for a movie..."
       />
       <button
         class="sc-htpNat fQXDrD"

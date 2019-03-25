@@ -51,7 +51,7 @@ export default () => {
   return (
     <Wrapper>
       <SearchBar
-        placeholder="Search for something... or don't, I don't care."
+        placeholder="Search for a movie..."
         onChange={({ target: { value } }) => setQuery(value)}
         onKeyDown={({ keyCode }) =>
           keyCode === 13 && query && dispatch({ type: 'query', payload: query })
